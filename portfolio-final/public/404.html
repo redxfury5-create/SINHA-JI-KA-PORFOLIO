@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | Divyajyot Sinha</title><meta name="description" content="This page could not be found."><meta name="theme-color" content="#050505"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&display=swap"><style>
+:root{--red:#ff1f2e;--redb:#e5101d;--mut:#b6b6b6;--line:#262626;--disp:"Big Shoulders Display",Impact,"Arial Narrow Bold",sans-serif;--body:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:radial-gradient(ellipse 70% 40% at 95% 0,rgba(255,31,46,.16),transparent 70%),radial-gradient(ellipse 60% 35% at 0 100%,rgba(255,31,46,.1),transparent 70%),#050505;color:#fff;font:400 16px/1.7 var(--body)}
+a{color:inherit}
+::selection{background:var(--red);color:#fff}
+.wrap{width:min(760px,calc(100% - 40px));margin:auto}
+.top{height:84px;display:flex;justify-content:space-between;align-items:center;width:min(1180px,calc(100% - 40px));margin:auto}
+.brand{display:flex;align-items:center;gap:12px;font:800 20px/1 var(--disp);letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+.brand b{display:grid;place-items:center;width:38px;height:38px;border:2px solid #fff;font-weight:900;font-size:18px;letter-spacing:0;transition:background .25s,border-color .25s,transform .45s cubic-bezier(.34,1.8,.64,1)}
+.brand:hover b{background:var(--redb);border-color:var(--redb);transform:skewX(-9deg) scale(1.08)}
+.back{position:relative;font-weight:500;font-size:15px;text-decoration:none;padding:6px 0;transition:color .2s}
+.back:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.back:hover{color:var(--red)}.back:hover:after{transform:scaleX(1)}
+main{flex:1;padding:48px 0 90px;animation:enter .8s cubic-bezier(.2,.7,.2,1) both}
+h1{font:900 clamp(56px,10vw,108px)/.88 var(--disp);text-transform:uppercase;letter-spacing:.005em;margin:0 0 20px}
+h1:before{content:"";display:inline-block;width:.24em;height:.74em;margin-right:.18em;background:var(--red);transform:skewX(-14deg)}
+h2{font:800 clamp(26px,3.4vw,34px)/1 var(--disp);text-transform:uppercase;letter-spacing:.02em;margin:44px 0 12px}
+p,li{color:var(--mut);line-height:1.8;font-size:15.5px}
+li strong,p strong{color:#fff}
+ul{padding-left:20px}
+li::marker{color:var(--red)}
+main a{color:#fff;text-underline-offset:3px;transition:color .2s}
+main a:hover{color:var(--red)}
+.updated{display:inline-block;background:#fff;color:#000!important;font:700 13px/1 var(--body)!important;padding:7px 11px;transform:skewX(-8deg);margin:0 0 14px}
+footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding:24px 0 34px;width:min(1180px,calc(100% - 40px));margin:auto;color:var(--mut);font-size:14px}
+footer a{text-decoration:none;transition:color .2s}footer a:hover{color:var(--red)}
+a:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@keyframes enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(max-width:560px){.brand span{display:none}}
+
+.thread{position:fixed;top:0;right:12%;width:1px;height:34vh;background:rgba(255,255,255,.6);transform-origin:top center;animation:swing 4.2s ease-in-out infinite alternate;pointer-events:none}
+.thread:after{content:"";position:absolute;left:-6px;bottom:-12px;width:13px;height:13px;border-radius:50%;background:var(--red);box-shadow:0 0 18px var(--red)}
+@keyframes swing{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+.big{font:900 clamp(120px,26vw,300px)/.8 var(--disp);margin:0 0 18px;-webkit-text-stroke:2px #fff;color:transparent;text-transform:uppercase}
+.btn{display:inline-block;border:0;padding:0;background:none;color:inherit;text-decoration:none;filter:drop-shadow(0 0 0 rgba(255,31,46,0));transition:filter .3s,transform .5s cubic-bezier(.34,1.8,.64,1)}
+.btn-in{--c:12px;display:inline-flex;padding:16px 28px;background:#fff;color:#000;font:700 17px/1 var(--body);clip-path:polygon(0 0,calc(100% - var(--c)) 0,100% var(--c),100% 100%,var(--c) 100%,0 calc(100% - var(--c)));transition:background .25s,color .25s}
+.btn:hover,.btn:focus-visible{transform:scale(1.07,.94);filter:drop-shadow(0 0 14px rgba(255,31,46,.75)) drop-shadow(0 -6px 28px rgba(255,31,46,.5))}
+.btn:hover .btn-in,.btn:focus-visible .btn-in{background:var(--redb);color:#fff}
+main h1{font-size:clamp(34px,5vw,54px);margin-bottom:18px}
+main h1:before{display:none}
+main p{max-width:460px;margin:0 0 28px}
+</style></head><body>
+<div class="thread" aria-hidden="true"></div>
+<header class="top"><a class="brand" href="/"><b>DS</b><span>Divyajyot Sinha</span></a><a class="back" href="/">Back to portfolio</a></header>
+<main class="wrap"><p class="big" aria-hidden="true">404</p><h1>That page is not here.</h1><p>The link may be old or mistyped. The portfolio has everything that is live right now.</p><a class="btn" href="/"><span class="btn-in">Back to portfolio</span></a></main>
+<footer><span>© 2026 Divyajyot Sinha</span><span><a href="/privacy">Privacy</a> &nbsp; <a href="/terms">Terms</a></span></footer></body></html>
